@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Follow As",
+  "version": "1.0.0",
+  "description": "Follow/unfollow users on X.com as your sub-account",
+  "permissions": ["nativeMessaging", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Follow As"
+  },
+  "icons": {}
+}

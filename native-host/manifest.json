@@ -1,0 +1,7 @@
+{
+  "name": "com.follow_as.host",
+  "description": "Native messaging host for Follow As Chrome extension",
+  "path": "C:\\Users\\ymkn\\Desktop\\follow-as\\native-host\\host.bat",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://cfgghbmgmcmikkpdcaplkmkegpploeka/"]
+}
